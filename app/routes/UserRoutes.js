@@ -7,7 +7,7 @@ module.exports = function(){
     router.post('/login', userCtrl.Login);
      router.get('/:pagenumber/:pagesize', userCtrl.GetAll);
      router.put('/:id', userCtrl.UpdateUser);
-     router.post('/:id', userCtrl.GetUserById);
+     router.get('/:id', userCtrl.GetUserById);
      router.delete('/:id', userCtrl.Deleteuser);
      router.get('/search', userCtrl.SearchUser);
 
